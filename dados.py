@@ -1,3 +1,8 @@
+'''
+	the algorithm performs analyzes such as mean, median, variance and standard deviation
+	of a set of data belonging to a sample 
+	GASM
+'''
 import math
 def linha(): 
 	print("================================================================================")  
@@ -11,8 +16,7 @@ media = 0
 value = 0 
 variancia = 0 
 desvio_padrao = 0  
-quartil = 0  
-cont_aux = 0 
+
 for i in range(q): 
 	value =  int(input("")) 
 	dados.append(value) 
