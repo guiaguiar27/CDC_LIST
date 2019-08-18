@@ -2,7 +2,7 @@
 /*Faça um algoritmo que seja capaz de identificar se uma matriz é uma matriz identidade ou não. */
 void main(){ 
 	int dimensao, dg_termos , fora_dg_termos,aux; /*dg = diagonal principal*/
-	printf("Entre com a dimensao :\n "); 
+	printf("Entre com a dimensao:\n "); 
 	scanf("%d",&dimensao);  
 	int matriz[dimensao][dimensao];      
 	dg_termos = 0 ; 
@@ -12,7 +12,7 @@ void main(){
 	//preenchimento da matriz  
 	for(int i = 0 ; i< dimensao ;i++){ 
 		for(int j = 0 ; j< dimensao ; j++){  
-			printf("termo[%d][%d]:",i,j);
+			printf("Termo[%d][%d]:",i,j);
 			scanf("%d",&matriz[i][j]); 		 
 		} 
 		printf("\n");
@@ -28,6 +28,7 @@ void main(){
 			 }
 		}
 	} 
-	if(dg_termos == dimensao && fora_dg_termos == aux ) { printf("A matriz é identidade \n ");}
+	if(dg_termos == dimensao && fora_dg_termos == aux ) { printf("A matriz é Identidade\n ");} 
+	else{ printf("A matriz não é Identidade\n ");}
 
 }
